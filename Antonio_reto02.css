@@ -1,0 +1,91 @@
+/*
+    CSS Cajas flotantes
+    Antonio Utrera Torrecillas
+    Enero 2024
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+body {
+    background-color: rgb(130, 125, 157);
+}
+
+header {
+    background-color: rgb(77, 62, 165);
+    color: #fff;
+    text-align: center;
+    padding: 4px;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+
+footer {
+    background-color: rgb(77, 62, 165);
+    color: #fff;
+    text-align: left;
+    padding: 4px;
+
+    border: 5px solid rgb(255, 255, 255);
+}
+
+h2 {
+    color: red;
+}
+
+section {
+    padding: 20px;
+    width: 75%;
+    background-color: white;
+    text-align: left;
+    display: flex;
+    overflow: auto;
+    margin: auto;
+}
+
+.grid {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    width: 30%;
+    margin: auto;
+    overflow: auto;
+
+}
+
+.grid>img {
+    width: 100%;
+    border: 5px solid violet;
+    transition: all 1s ease;
+    border-radius: 25%;
+}
+
+.grid>img:hover {
+    transform: scale(1.1) rotate(6deg);
+}
+
+@font-face {
+    font-family: "letra";
+    src: url(LT\ Funk.otf);
+}
+
+.letra {
+    padding: 15px;
+    font-family: "letra";
+    font-size: 22px;
+    text-shadow: 2px 2px 4px black;
+
+}
+
+.izqui {
+    padding-top: 20px;
+    display: flex;
+    grid-gap: 10px;
+    width: 3%;
+    float: right;
+    border-radius: 25%;
+}
